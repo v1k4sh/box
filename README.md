@@ -1,1 +1,1 @@
-i will be posting writeups of Box/room
+i will be posting writeups in this Box/room repo
