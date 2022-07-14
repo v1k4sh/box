@@ -1,0 +1,14 @@
+Room_Rootme
+=>scan nmap
+=>gobuster file hidden
+=>upload folder
+=>fuzz with burpsuit
+=>reverse shell to nc
+=>suid python
+=>etc.shadow
+=>unshadow
+=>john
+=>test user password
+=>ssh to test
+=>now suid python to sudo
+=>you become the root
