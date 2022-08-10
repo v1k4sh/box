@@ -1,0 +1,5 @@
+smb i.e port 139,445
+enumerating smb using nmap 
+[manual]
+>>>nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.108.4
+>>>smbclient //<ip>/anonymous

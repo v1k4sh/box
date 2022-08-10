@@ -1,0 +1,11 @@
+smb client
+smb enumeration
+smb i.e port 139,445
+enumerating smb using nmap 
+[manual]
+>>>nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.108.4
+>>>smbclient //<ip>/anonymous
+nfs-showmount
+how to connect to FTP port 
+answer is through "netcat"
+>>>nc <ip_address> 21[port]

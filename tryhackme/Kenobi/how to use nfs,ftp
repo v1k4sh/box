@@ -1,0 +1,10 @@
+use ftp (file transfer protocol) 
+>we have to locate the mountable file on the target machine
+>now mnt the file into the attacke system 
+
+to load a nfs into your attacker machine
+
+>>>mount machine_ip/Path
+>>>mount [loaction of nfs in target machine <machine_ip:/var>] [location of file in attacker machine</mnt/kenobiNFS>]
+now check the file
+

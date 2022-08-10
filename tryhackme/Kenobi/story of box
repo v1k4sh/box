@@ -1,0 +1,33 @@
+Start the machine and wait till it boot
+now 1st thing use enumeration i.e. use "nmap" and find the running port on the target machine
+we get there is 7 service running 
+and one of them is smb 
+
+# smb>> samba share it port no is 139,445 
+  we can enumerate smb manually and automatically ["enum4linux"]
+  here we are using manually ["smbclient"]["nmap" -script]["smbget" -R]
+  through nmap we come to know about the smb share and smb user
+  after getting the result 
+  through smbclient we found the log file which tell us the about id_rsa	next port
+  FTP is running and port no for ftp is 21
+  enumarating through [nmap -script nfs]
+  we know that it is sharing one file 
+  {we also find this by not using nmap i.e["showmount -a <ip>"]}
+  after getting the result we found that one of the port is running ""proftpd"tool" so we expoited it by SITE CPFR and CPTO 
+  here basically we are trying to get id_rsa key form the target machine
+  we loaded the FTP by netcat "nc <ip> <port>"
+  we have to get the id_rsa file so "mount" the file 
+  [means if we mount the file then we will be able to transfer file or change file with target using our file system]
+  get the id_rsa by nfs "mount"
+  now use ssh 
+  we have to make the key unexecutable to work
+  
+  
+  task 4
+  privilege escalation
+  use the "find" command to get the sbit in the target
+  here we can see that the file /usr/bin/menu is not using a full binary path 
+  i.e bin/sh 
+  now change the chmod 
+  and run the command I.e menu 
+  and you got root
