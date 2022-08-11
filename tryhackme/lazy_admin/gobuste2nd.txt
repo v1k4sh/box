@@ -1,0 +1,42 @@
+gobuster dir -u http://10.10.240.9/content/ -w /usr/share/dirb/wordlists/common.txt -x php,txt,html --no-error -t 100                                              
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.240.9/content/
+[+] Method:                  GET
+[+] Threads:                 100
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,txt,html
+[+] Timeout:                 10s
+===============================================================
+2022/07/24 20:50:18 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 276]
+/.htaccess.html       (Status: 403) [Size: 276]
+/_themes              (Status: 301) [Size: 320] [--> http://10.10.240.9/content/_themes/]
+/.hta.php             (Status: 403) [Size: 276]                                          
+/.htaccess            (Status: 403) [Size: 276]                                          
+/.hta.txt             (Status: 403) [Size: 276]                                          
+/.htaccess.php        (Status: 403) [Size: 276]                                          
+/.hta.html            (Status: 403) [Size: 276]                                          
+/.htaccess.txt        (Status: 403) [Size: 276]                                          
+/.htpasswd.html       (Status: 403) [Size: 276]                                          
+/.htpasswd            (Status: 403) [Size: 276]                                          
+/.htpasswd.php        (Status: 403) [Size: 276]                                          
+/.htpasswd.txt        (Status: 403) [Size: 276]                                          
+/as                   (Status: 301) [Size: 315] [--> http://10.10.240.9/content/as/]     
+/attachment           (Status: 301) [Size: 323] [--> http://10.10.240.9/content/attachment/]
+/changelog.txt        (Status: 200) [Size: 18013]                                           
+/images               (Status: 301) [Size: 319] [--> http://10.10.240.9/content/images/]    
+/inc                  (Status: 301) [Size: 316] [--> http://10.10.240.9/content/inc/]       
+/index.php            (Status: 200) [Size: 2197]                                            
+/index.php            (Status: 200) [Size: 2197]                                            
+/js                   (Status: 301) [Size: 315] [--> http://10.10.240.9/content/js/]        
+/license.txt          (Status: 200) [Size: 15410]                                           
+                                                                                            
+===============================================================
+2022/07/24 20:51:15 Finished
+===============================================================

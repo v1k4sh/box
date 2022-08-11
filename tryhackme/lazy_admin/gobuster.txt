@@ -1,0 +1,36 @@
+gobuster dir -u http://10.10.240.9/ -w /usr/share/dirb/wordlists/common.txt -x php,txt,html --no-error -t 100
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.240.9/
+[+] Method:                  GET
+[+] Threads:                 100
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,txt,html
+[+] Timeout:                 10s
+===============================================================
+2022/07/24 20:37:39 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 276]
+/.hta.txt             (Status: 403) [Size: 276]
+/.hta.html            (Status: 403) [Size: 276]
+/.hta.php             (Status: 403) [Size: 276]
+/.htaccess.php        (Status: 403) [Size: 276]
+/.htpasswd            (Status: 403) [Size: 276]
+/.htaccess.txt        (Status: 403) [Size: 276]
+/.htpasswd.php        (Status: 403) [Size: 276]
+/.htpasswd.txt        (Status: 403) [Size: 276]
+/.htaccess.html       (Status: 403) [Size: 276]
+/.htpasswd.html       (Status: 403) [Size: 276]
+/.htaccess            (Status: 403) [Size: 276]
+/content              (Status: 301) [Size: 312] [--> http://10.10.240.9/content/]
+/index.html           (Status: 200) [Size: 11321]                                
+/index.html           (Status: 200) [Size: 11321]                                
+/server-status        (Status: 403) [Size: 276]                                  
+                                                                                 
+===============================================================
+2022/07/24 20:38:34 Finished
+===============================================================
